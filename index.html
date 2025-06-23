@@ -1,19 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Whistle Blowerz</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Quick embedded style for layout & nav, in case you want a fast preview */
+    body {
+      background: #1e7f1e; /* grass green */
+      background-image: 
+        url('https://upload.wikimedia.org/wikipedia/commons/7/7a/American_football_helmet.svg'),
+        url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Soccer_ball_icon.svg'),
+        url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Baseball_icon.svg'),
+        url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball_icon.svg');
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: 10% 10%, 80% 15%, 20% 80%, 75% 75%;
+      background-size: 60px 60px, 60px 60px, 60px 60px, 60px 60px;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 5px;
+    }
+    header .tagline {
+      font-style: italic;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2em;
+      padding: 8px 15px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 25px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    main h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    #featured-player .player-card {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.3em;
+      color: #f0f0f0;
+    }
+    #news p {
+      font-size: 1.1em;
+      text-align: center;
+      color: #eee;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>🏀 Whistle Blowerz 🏈</h1>
     <p class="tagline">Where the game never stops.</p>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Players</a>
-      <a href="#">Teams</a>
-      <a href="#">Fun Zone</a>
+      <a href="basketball.html">Basketball</a>
+      <a href="baseball.html">Baseball</a>
+      <a href="soccer.html">Soccer</a>
+      <a href="football.html">Football</a>
+      <a href="news.html">News</a>
     </nav>
   </header>
 
@@ -22,7 +106,6 @@
       <h2>Featured Player</h2>
       <div class="player-card">
         <p>Choose a player to see their stats!</p>
-        <!-- We'll add player info here later -->
       </div>
     </section>
 
@@ -37,3 +120,4 @@
   </footer>
 </body>
 </html>
+
