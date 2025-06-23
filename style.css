@@ -1,17 +1,13 @@
 /* Body & Background */
 body {
-  background: #1e7f1e; /* deep grass green */
+  background: #1e7f1e; /* grass green */
   background-image: 
     url('https://upload.wikimedia.org/wikipedia/commons/7/7a/American_football_helmet.svg'),
     url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Soccer_ball_icon.svg'),
     url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Baseball_icon.svg'),
     url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball_icon.svg');
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: 
-    10% 10%,   /* football top-left */
-    80% 15%,   /* soccer top-right */
-    20% 80%,   /* baseball bottom-left */
-    75% 75%;   /* basketball bottom-right */
+  background-position: 10% 10%, 80% 15%, 20% 80%, 75% 75%;
   background-size: 60px 60px, 60px 60px, 60px 60px, 60px 60px;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -56,7 +52,8 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -99,4 +96,32 @@ footer {
   margin-top: 60px;
   font-size: 0.9em;
   color: #ccc;
+}
+
+/* Big Buttons Container */
+.news-buttons, .sport-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* Big Buttons Style */
+.news-btn, .sport-btn {
+  background-color: #0099ff;
+  color: white;
+  padding: 25px 50px;
+  font-size: 1.5em;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  text-align: center;
+  min-width: 180px;
+}
+
+.news-btn:hover, .sport-btn:hover {
+  background-color: #0066cc;
 }
